@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: #3b3b98;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    max-width: 350px;
+    width: 100%;
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+#results-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 95%;
+    margin-top: 1rem;
+    padding: 12px 10px;
+    position: relative;
+    height: 50px;
+}
+
+#result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+#results-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.btn {
+    border: none;
+    background-color: #3b3b98;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+#settings {
+    width: 95%;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#settings-submit {
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+}
+
+.settings-container:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-container input {
+    cursor: pointer;
+}
+
+.settings-container input {
+    accent-color: #3b3b98;
+}
+
+#settings-length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.9rem;
+}
+
+#settings-length input {
+    width: 40px;
+}
+
+#settings-length input:focus {
+    outline: none;
+}
